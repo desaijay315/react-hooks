@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Effect from './Effect';
+import Ref from './Ref';
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <Effect />
+    <Ref />
   </React.StrictMode>,
   document.getElementById('root')
 );
