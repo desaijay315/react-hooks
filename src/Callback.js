@@ -11,8 +11,8 @@ function Callback() {
         color: dark ? '#FFF' : '#333'
     }
 
-    const getItems = useCallback(() => {
-        return [number, number + 1, number + 2]
+    const getItems = useCallback((incrementer) => {
+        return [number + incrementer, number + 1 + incrementer, number + 2 + incrementer]
     }, [number])
 
     return (
