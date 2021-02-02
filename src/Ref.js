@@ -3,11 +3,11 @@ import React, { useState, useRef, useEffect } from 'react';
 function Ref() {
     console.log("rendered")
     const [name, setName] = useState('')
-    const prevName = useRef('')
+    const renderCount = useRef(1)
 
     useEffect(() => {
-        prevName.current = name
-    }, [name])
+        renderCount.current = renderCount.current + 1
+    })
 
     // const inputRef = useRef()
 
@@ -18,7 +18,8 @@ function Ref() {
     return (
         <>
             <input value={name} onChange={e => setName(e.target.value)} />
-            <div>My name is {name} and it used to be {prevName.current}</div>
+            <div>My name is {name}</div>
+            <div>I was rendered {renderCount.current} times</div>
 
         </>
     );
