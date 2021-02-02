@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Ref from './Ref';
+import Memo from './Memo';
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <Ref />
+    <Memo />
   </React.StrictMode>,
   document.getElementById('root')
 );
