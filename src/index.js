@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Memo from './Memo';
+import Callback from './Callback';
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <Memo />
+    <Callback />
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -19,7 +19,7 @@ function Memo() {
     }, [dark])
 
     useEffect(() => {
-        console.log('render themes changes')
+        console.log('render')
     }, [themeStyles])
 
     return (
